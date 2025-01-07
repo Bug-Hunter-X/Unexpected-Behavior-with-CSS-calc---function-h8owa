@@ -1,0 +1,19 @@
+/* Incorrect use of calc(), missing spaces */
+.element { 
+  width:calc(100px+50px);
+}
+
+/* Correct use of calc(), spaces added */
+.element { 
+  width: calc(100px + 50px);
+}
+
+/* Incorrect unit mix */
+.element { 
+  height: calc(50% + 100px); /*Inconsistent units*/
+}
+
+/* Correct unit mix using conversion if necessary */
+.element { 
+  height: calc(50vh + 100px); /*Using vh to represent 50% of viewport height */
+}
